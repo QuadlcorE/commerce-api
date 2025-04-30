@@ -1,0 +1,29 @@
+{
+  "name": "commerce-api",
+  "version": "1.0.0",
+  "description": "A robust backend API service built with Node.js, Express, and MongoDB. It provides essential functionalities for user management (registration, login, profile), comprehensive CRUD operations for products, and a valuable feature that integrates a third-party currency exchange API to display product prices in various currencies.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuadlcorE/commerce-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuadlcorE/commerce-api/issues"
+  },
+  "homepage": "https://github.com/QuadlcorE/commerce-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.0",
+    "nodemon": "^3.1.10"
+  }
+}
