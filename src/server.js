@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import {config} from 'dotenv';
 import { connect } from './config/database.js';
 import userRouter from './api/v1/routes/users.js';
+import productRouter from './api/v1/routes/product.js';
 
 config();
 
@@ -15,6 +16,8 @@ connect();
 
 
 app.use('/api/v1', userRouter);
+app.use('/api/v1/products', productRouter);
+
 
 // TODO: Remove test and home routes.
 app.get('/', (req, res) => {

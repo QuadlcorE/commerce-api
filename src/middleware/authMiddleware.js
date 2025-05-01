@@ -13,8 +13,6 @@ export const auth = (req, res, next) => {
         let token = req.cookies?.token || 
                    req.header("Authorization")?.replace("Bearer ", "") || 
                    req.body?.token;
-
-        // console.log("Token found:", token ? "Yes" : "No");
         
         if (!token) {
             return res.status(401).json({
@@ -25,7 +23,7 @@ export const auth = (req, res, next) => {
 
         try {
             const decoded = jwt.verify(token, process.env.JWT_SECRET);
-            // console.log("Decoded token:", decoded); // Log the decoded token for debugging
+            // console.log("Decoded token:", decoded); 
             
             if (!decoded || !decoded.username) {
                 // console.log("Token missing username property");
