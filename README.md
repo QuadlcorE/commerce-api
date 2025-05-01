@@ -33,7 +33,7 @@ Before you begin, ensure you have the following installed:
 
    - `MONGODB_URL`: Connection string for your MongoDB instance
    - `JWT_SECRET`: Secret key for JWT authentication (use a strong, random string)
-   - `PORT`: Server port (default: 5000)
+   - `PORT`: Server port (default: 4000)
 
 4. **Start the development server**
    ```bash
